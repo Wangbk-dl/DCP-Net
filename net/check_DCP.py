@@ -47,7 +47,7 @@ def prepare_data(path):
         DCP_save = Image.fromarray(DCP_save).convert('L')
         # trans_name = hazy_name[:10]
 
-        DCP_save.save("/home/wbk/Dehazing/data/OTS/dcp/{}_DCP.bmp".format(trans_name))
+        DCP_save.save("./data/OTS/dcp/{}_DCP.bmp".format(trans_name))
         print(index)
 
     # clean_training[clean_training > 1.0] = 1.0
